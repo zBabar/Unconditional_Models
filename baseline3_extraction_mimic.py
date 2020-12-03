@@ -41,7 +41,7 @@ def extract_report(train_data):
     return accuracy
 
 
-orig_data=pd.read_csv('mimic-cxr-2.0.0-chexpert.csv')
+orig_data=pd.read_csv('./data/mimic-cxr-2.0.0-chexpert.csv')
 
 data=orig_data.iloc[:,2:]
 print(data.shape)
