@@ -60,14 +60,16 @@ def all_scores(trues, pred, n=4):
   Returns: BLEU-1, BLEU-2, BLEU-3, BLEU-4, METEOR, ROUGE, CIDEr, CIDEr-D
   """
   trues = dict([(i,[r]) for i,r in enumerate(trues)])
+  
   if isinstance(pred,str):
     preds = dict([(i,[pred]) for i,_ in enumerate(trues)])
+    
   else:
     preds = dict([(i,[r]) for i,r in enumerate(pred)])
   bleus, _ = Bleu(n).compute_score(trues,preds)
   #with closing(Meteor()) as meteor_runtime:
-  #meteor, _ = Meteor().compute_score(trues,preds)
-  meteor=0.0
+  meteor, _ = Meteor().compute_score(trues,preds)
+  #meteor=0.0
   rouge, _ = Rouge().compute_score(trues,preds)
   ciders, _ = Cider().compute_score(trues,preds)
   return bleus,meteor, rouge, ciders
