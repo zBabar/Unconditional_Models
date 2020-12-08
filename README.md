@@ -7,3 +7,14 @@ All the operations we performed using the labels (annotated using chexpert label
 - 'chexpert_labeler_baseline' can be used to compute all the clinical validation measures between candidate reports and reference reports with respect to chexpert based labels.
 
 
+# Unconditional-Model
+
+This code performs following tasks
+
+- Finds best report with respect to baseline 1 method
+
+
+- Generates report using the baseline2 method 
+
+
+- 'baslines.py' is the main file containg all the functions to extract baseline report. 'extract_baseline_reports.ipynb' is the file using 'train.csv' and 'test.csv' (both these files should be stored in data folder) to extract baseline report using functions in 'baselines.py'. 
