@@ -19,6 +19,6 @@ All the operations we performed using the labels (annotated using chexpert label
 - Here you have to use 'Baseline3_extraction_IU.ipynb' to extract a baseline 3 report. This will also output the BLEU scores with respect to new baseline3. 
 - Source files (which is chexpert based labels, computed using chexpert labels, against a training data) should be stored in the data folder. Moreover, a file with cleaned test report should also be stored in data folder to compute bleu scores.
 
-- 'chexpert_labeler_metrics' can be used to compute all the clinical validation measures between candidate reports and reference reports with respect to chexpert based labels.
+- 'chexpert_labeler_metrics' can be used to compute all the clinical validation measures between candidate reports and reference reports along with the accuracy with respect to chexpert based labels.
 
 
