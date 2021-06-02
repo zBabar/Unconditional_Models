@@ -34,7 +34,7 @@ def extract_report(cleaned_data,cleaned_study,train_index,test_index):
 # In[3]:
 
 
-orig_data=pd.read_csv('./data/processed_data.csv')
+orig_data=pd.read_csv('../data/processed_data.csv')
 
 print(orig_data.columns)
 
