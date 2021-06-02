@@ -9,6 +9,7 @@ This code performs following tasks
 
 
 - 'baslines.py' or (baselines_new.py with Cider-D) is the main file containg all the functions to extract baseline report. 'extract_baseline_reports.ipynb' is the file using 'train.csv' and 'test.csv' (both these files should be stored in data folder) to extract baseline report using functions in 'baselines.py'. 
+- MIMC-CXR dataset or related files are not shared here due to restricted access.
 
 
 
