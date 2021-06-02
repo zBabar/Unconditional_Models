@@ -1,0 +1,8 @@
+- You can use this directory to extract baseline 1 and 2 reports from MIMIC-CXR.
+- A large file containing MIMIC CXR reports (Impression_Findings) should be stored in data folder of the parent library.
+- This code uses multi process to execute the code more fast.
+
+
+- 'Compile_metric_scores.ipynb' should be used to computed final BLEU scores and Accuracy scores based on Baselines extract from 'Baseline1_extract_mimic.py'.
+
+- MIMIC-CXR is with restricted access so we cannot share the files.
